@@ -67,3 +67,4 @@ mongoose
   .catch((error) => {
     console.error("Could not connect to MongoDB:", error.message);
   });
+module.exports = app;
