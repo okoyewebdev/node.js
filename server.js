@@ -10,8 +10,9 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 if (!process.env.MONGODB_URI) {
-  console.error("MONGODB_URI is missing. Add it to your .env file before starting the server.");
-  process.exit(1);
+  console.error("MONGODB_URI is missing");
+} else {
+  console.log("MONGODB_URI is available");
 }
 
 app.use(cors());
